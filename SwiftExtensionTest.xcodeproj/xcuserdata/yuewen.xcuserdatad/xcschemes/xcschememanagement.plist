@@ -4,15 +4,35 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>SwiftExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>SwiftExtensionTest.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SwiftTodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>DBC9B7551F2974ED008DDFA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBC9B76E1F297525008DDFA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DBC9B7861F2975C3008DDFA0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

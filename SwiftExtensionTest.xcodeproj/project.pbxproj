@@ -12,7 +12,58 @@
 		DBC9B75F1F2974ED008DDFA0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC9B75D1F2974ED008DDFA0 /* Main.storyboard */; };
 		DBC9B7611F2974ED008DDFA0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBC9B7601F2974ED008DDFA0 /* Assets.xcassets */; };
 		DBC9B7641F2974ED008DDFA0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC9B7621F2974ED008DDFA0 /* LaunchScreen.storyboard */; };
+		DBC9B7721F297525008DDFA0 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC9B7711F297525008DDFA0 /* NotificationCenter.framework */; };
+		DBC9B7751F297525008DDFA0 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9B7741F297525008DDFA0 /* TodayViewController.swift */; };
+		DBC9B7781F297525008DDFA0 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBC9B7761F297525008DDFA0 /* MainInterface.storyboard */; };
+		DBC9B77C1F297525008DDFA0 /* SwiftTodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DBC9B76F1F297525008DDFA0 /* SwiftTodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DBC9B78B1F2975C3008DDFA0 /* SwiftExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = DBC9B7891F2975C3008DDFA0 /* SwiftExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBC9B78E1F2975C3008DDFA0 /* SwiftExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC9B7871F2975C3008DDFA0 /* SwiftExtension.framework */; };
+		DBC9B78F1F2975C3008DDFA0 /* SwiftExtension.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DBC9B7871F2975C3008DDFA0 /* SwiftExtension.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DBC9B7971F297646008DDFA0 /* SwiftExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBC9B7871F2975C3008DDFA0 /* SwiftExtension.framework */; };
+		DBC9B79C1F2978DC008DDFA0 /* SwiftFrameWorkObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBC9B79A1F2978C4008DDFA0 /* SwiftFrameWorkObject.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DBC9B77A1F297525008DDFA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBC9B74E1F2974ED008DDFA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBC9B76E1F297525008DDFA0;
+			remoteInfo = SwiftTodayExtension;
+		};
+		DBC9B78C1F2975C3008DDFA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DBC9B74E1F2974ED008DDFA0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DBC9B7861F2975C3008DDFA0;
+			remoteInfo = SwiftExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DBC9B7801F297525008DDFA0 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DBC9B77C1F297525008DDFA0 /* SwiftTodayExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC9B7931F2975C3008DDFA0 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				DBC9B78F1F2975C3008DDFA0 /* SwiftExtension.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DBC9B7561F2974ED008DDFA0 /* SwiftExtensionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftExtensionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +73,38 @@
 		DBC9B7601F2974ED008DDFA0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBC9B7631F2974ED008DDFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBC9B7651F2974ED008DDFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC9B76F1F297525008DDFA0 /* SwiftTodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SwiftTodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC9B7711F297525008DDFA0 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		DBC9B7741F297525008DDFA0 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		DBC9B7771F297525008DDFA0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		DBC9B7791F297525008DDFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC9B7811F297557008DDFA0 /* SwiftExtensionTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftExtensionTest.entitlements; sourceTree = "<group>"; };
+		DBC9B7871F2975C3008DDFA0 /* SwiftExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBC9B7891F2975C3008DDFA0 /* SwiftExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftExtension.h; sourceTree = "<group>"; };
+		DBC9B78A1F2975C3008DDFA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBC9B7991F297880008DDFA0 /* SwiftTodayExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftTodayExtension.entitlements; sourceTree = "<group>"; };
+		DBC9B79A1F2978C4008DDFA0 /* SwiftFrameWorkObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftFrameWorkObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DBC9B7531F2974ED008DDFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC9B78E1F2975C3008DDFA0 /* SwiftExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC9B76C1F297525008DDFA0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC9B7971F297646008DDFA0 /* SwiftExtension.framework in Frameworks */,
+				DBC9B7721F297525008DDFA0 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC9B7831F2975C3008DDFA0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				DBC9B7581F2974ED008DDFA0 /* SwiftExtensionTest */,
+				DBC9B7731F297525008DDFA0 /* SwiftTodayExtension */,
+				DBC9B7881F2975C3008DDFA0 /* SwiftExtension */,
+				DBC9B7701F297525008DDFA0 /* Frameworks */,
 				DBC9B7571F2974ED008DDFA0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +129,8 @@
 			isa = PBXGroup;
 			children = (
 				DBC9B7561F2974ED008DDFA0 /* SwiftExtensionTest.app */,
+				DBC9B76F1F297525008DDFA0 /* SwiftTodayExtension.appex */,
+				DBC9B7871F2975C3008DDFA0 /* SwiftExtension.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +138,7 @@
 		DBC9B7581F2974ED008DDFA0 /* SwiftExtensionTest */ = {
 			isa = PBXGroup;
 			children = (
+				DBC9B7811F297557008DDFA0 /* SwiftExtensionTest.entitlements */,
 				DBC9B7591F2974ED008DDFA0 /* AppDelegate.swift */,
 				DBC9B75B1F2974ED008DDFA0 /* ViewController.swift */,
 				DBC9B75D1F2974ED008DDFA0 /* Main.storyboard */,
@@ -64,7 +149,47 @@
 			path = SwiftExtensionTest;
 			sourceTree = "<group>";
 		};
+		DBC9B7701F297525008DDFA0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBC9B7711F297525008DDFA0 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBC9B7731F297525008DDFA0 /* SwiftTodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DBC9B7991F297880008DDFA0 /* SwiftTodayExtension.entitlements */,
+				DBC9B7741F297525008DDFA0 /* TodayViewController.swift */,
+				DBC9B7761F297525008DDFA0 /* MainInterface.storyboard */,
+				DBC9B7791F297525008DDFA0 /* Info.plist */,
+			);
+			path = SwiftTodayExtension;
+			sourceTree = "<group>";
+		};
+		DBC9B7881F2975C3008DDFA0 /* SwiftExtension */ = {
+			isa = PBXGroup;
+			children = (
+				DBC9B79A1F2978C4008DDFA0 /* SwiftFrameWorkObject.swift */,
+				DBC9B7891F2975C3008DDFA0 /* SwiftExtension.h */,
+				DBC9B78A1F2975C3008DDFA0 /* Info.plist */,
+			);
+			path = SwiftExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DBC9B7841F2975C3008DDFA0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC9B78B1F2975C3008DDFA0 /* SwiftExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		DBC9B7551F2974ED008DDFA0 /* SwiftExtensionTest */ = {
@@ -74,15 +199,54 @@
 				DBC9B7521F2974ED008DDFA0 /* Sources */,
 				DBC9B7531F2974ED008DDFA0 /* Frameworks */,
 				DBC9B7541F2974ED008DDFA0 /* Resources */,
+				DBC9B7801F297525008DDFA0 /* Embed App Extensions */,
+				DBC9B7931F2975C3008DDFA0 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DBC9B77B1F297525008DDFA0 /* PBXTargetDependency */,
+				DBC9B78D1F2975C3008DDFA0 /* PBXTargetDependency */,
 			);
 			name = SwiftExtensionTest;
 			productName = SwiftExtensionTest;
 			productReference = DBC9B7561F2974ED008DDFA0 /* SwiftExtensionTest.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DBC9B76E1F297525008DDFA0 /* SwiftTodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC9B77D1F297525008DDFA0 /* Build configuration list for PBXNativeTarget "SwiftTodayExtension" */;
+			buildPhases = (
+				DBC9B76B1F297525008DDFA0 /* Sources */,
+				DBC9B76C1F297525008DDFA0 /* Frameworks */,
+				DBC9B76D1F297525008DDFA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftTodayExtension;
+			productName = SwiftTodayExtension;
+			productReference = DBC9B76F1F297525008DDFA0 /* SwiftTodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		DBC9B7861F2975C3008DDFA0 /* SwiftExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBC9B7901F2975C3008DDFA0 /* Build configuration list for PBXNativeTarget "SwiftExtension" */;
+			buildPhases = (
+				DBC9B7821F2975C3008DDFA0 /* Sources */,
+				DBC9B7831F2975C3008DDFA0 /* Frameworks */,
+				DBC9B7841F2975C3008DDFA0 /* Headers */,
+				DBC9B7851F2975C3008DDFA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftExtension;
+			productName = SwiftExtension;
+			productReference = DBC9B7871F2975C3008DDFA0 /* SwiftExtension.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +261,27 @@
 					DBC9B7551F2974ED008DDFA0 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8S4NWFZC5J;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					DBC9B76E1F297525008DDFA0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8S4NWFZC5J;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					DBC9B7861F2975C3008DDFA0 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8S4NWFZC5J;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,6 +300,8 @@
 			projectRoot = "";
 			targets = (
 				DBC9B7551F2974ED008DDFA0 /* SwiftExtensionTest */,
+				DBC9B76E1F297525008DDFA0 /* SwiftTodayExtension */,
+				DBC9B7861F2975C3008DDFA0 /* SwiftExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +317,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBC9B76D1F297525008DDFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC9B7781F297525008DDFA0 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC9B7851F2975C3008DDFA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -142,7 +344,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DBC9B76B1F297525008DDFA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC9B7751F297525008DDFA0 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBC9B7821F2975C3008DDFA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBC9B79C1F2978DC008DDFA0 /* SwiftFrameWorkObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DBC9B77B1F297525008DDFA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBC9B76E1F297525008DDFA0 /* SwiftTodayExtension */;
+			targetProxy = DBC9B77A1F297525008DDFA0 /* PBXContainerItemProxy */;
+		};
+		DBC9B78D1F2975C3008DDFA0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DBC9B7861F2975C3008DDFA0 /* SwiftExtension */;
+			targetProxy = DBC9B78C1F2975C3008DDFA0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DBC9B75D1F2974ED008DDFA0 /* Main.storyboard */ = {
@@ -159,6 +390,14 @@
 				DBC9B7631F2974ED008DDFA0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DBC9B7761F297525008DDFA0 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBC9B7771F297525008DDFA0 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -260,7 +499,9 @@
 		DBC9B7691F2974ED008DDFA0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftExtensionTest/SwiftExtensionTest.entitlements;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
 				INFOPLIST_FILE = SwiftExtensionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -273,13 +514,94 @@
 		DBC9B76A1F2974ED008DDFA0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SwiftExtensionTest/SwiftExtensionTest.entitlements;
 				DEVELOPMENT_TEAM = 8S4NWFZC5J;
 				INFOPLIST_FILE = SwiftExtensionTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yue.SwiftExtensionTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DBC9B77E1F297525008DDFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftTodayExtension/SwiftTodayExtension.entitlements;
+				DEVELOPMENT_TEAM = 8S4NWFZC5J;
+				INFOPLIST_FILE = SwiftTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.SwiftExtensionTest.SwiftTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DBC9B77F1F297525008DDFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SwiftTodayExtension/SwiftTodayExtension.entitlements;
+				DEVELOPMENT_TEAM = 8S4NWFZC5J;
+				INFOPLIST_FILE = SwiftTodayExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.SwiftExtensionTest.SwiftTodayExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		DBC9B7911F2975C3008DDFA0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8S4NWFZC5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftExtension/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.SwiftExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DBC9B7921F2975C3008DDFA0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8S4NWFZC5J;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SwiftExtension/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yue.SwiftExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -300,6 +622,22 @@
 			buildConfigurations = (
 				DBC9B7691F2974ED008DDFA0 /* Debug */,
 				DBC9B76A1F2974ED008DDFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBC9B77D1F297525008DDFA0 /* Build configuration list for PBXNativeTarget "SwiftTodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC9B77E1F297525008DDFA0 /* Debug */,
+				DBC9B77F1F297525008DDFA0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DBC9B7901F2975C3008DDFA0 /* Build configuration list for PBXNativeTarget "SwiftExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBC9B7911F2975C3008DDFA0 /* Debug */,
+				DBC9B7921F2975C3008DDFA0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
